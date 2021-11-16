@@ -18,6 +18,7 @@ python3 lenovo_watchdog.py
 - There's a [Procfile](https://github.com/agustinkoszczej/lenovo-watchdog/blob/master/Procfile) for deploying it on Heroku cloud platform.
 - Your environment variables should look like:
   ```
+  URL = https://www.lenovo.com/ar/es/araff/gatekeeper/showpage?toggle=PasscodeGatekeeper
   COUPON_CODE = CSTARHR
   TO_ADDRESS = <email-address>
   FROM_ADDRESS = <sendgrid-validated-email-address>
