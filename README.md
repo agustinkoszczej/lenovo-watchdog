@@ -7,8 +7,8 @@ Some of the main technologies used: ```Python```, ```SendGrid``` _(for email not
 
 ## How to run
 
-1. Set up your [environment variables](https://github.com/agustinkoszczej/lenovo-watchdog/blob/master/.env) _(you can choose wheter to edit the .env file for local tests or set up them as env variables in your container)_
-2. Just run the following command and get notified:
+1. Set your environment variables _(you can choose wheter to edit a ```.env``` file for local tests or set up them as environment variables in your container)_.
+2. Run the following command and get notified:
 ```bash
 python3 lenovo_watchdog.py
 ```
@@ -16,3 +16,13 @@ python3 lenovo_watchdog.py
 # Notes
  
 - There's a [Procfile](https://github.com/agustinkoszczej/lenovo-watchdog/blob/master/Procfile) for deploying it on Heroku cloud platform.
+- Your environment variables should look like:
+  ```
+  COUPON_CODE = CSTARHR
+  TO_ADDRESS = <email-address>
+  FROM_ADDRESS = <sendgrid-validated-email-address>
+  SENDGRID_API_KEY = <sendgrid-api-key>
+  LOGGING_LEVEL = INFO
+  REFRESH_INTERVAL = 120
+  GOOGLE_CHROME_BIN = C:\Program Files\Google\Chrome\Application\chrome.exe
+  ```
