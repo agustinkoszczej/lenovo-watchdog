@@ -1,5 +1,8 @@
 # lenovo-watchdpg
-This is an application for checking stock availability on a Lenovo laptop :). It connects to an affinity portal webpage, logs in using a promotional code. If there's stock, it will send an email notification.
+This is an application for checking stock availability on a Lenovo laptop sale:). 
+
+It connects to an affinity portal webpage, logs in using a promotional code and will check with a given frequency _(set as environment variable)_ and if there's stock available, it will send an email notification.
+
 Some of the main technologies used: ```Python```, ```SendGrid``` _(for email notifications)_ and ```Selenium```_(for webpage automation)_.
 
 ## How to run
