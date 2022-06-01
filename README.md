@@ -1,4 +1,4 @@
-# lenovo-watchdpg
+# lenovo-watchdog
 This is an application for checking stock availability on a Lenovo laptop sale:). 
 
 It connects to an affinity portal webpage, logs in using a promotional code and will check with a given frequency _(set as environment variable)_ and if there's stock available, it will send an email notification.
